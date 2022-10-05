@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*De un aspirante a un empleo, que realizó un test de capacitación, se obtuvo la
+        siguiente información: nombre del aspirante, cantidad total de preguntas que se
+        le realizaron y cantidad de preguntas que contestó correctamente. Se pide
+        confeccionar un programa que lea los datos del aspirante e informe el nivel del
+        mismo según el porcentaje de respuestas correctas que ha obtenido, y
+        sabiendo que*/
+
+        let nombre=prompt("Introduce el noombre del aspirante","Alfredo");
+        let preguntas=parseInt(prompt("Introduce las cantidad de preguntas"));
+        let aciertos=parseInt(prompt("Introduce la cantidad de aciertos en las preguntas"));
+        window.onload=porcentaje;
+        function porcentaje(){
+            let porcentaje=aciertos/preguntas*100
+            
+            if(porcentaje<50){
+                console.log("Fuera de nivel,"+nombre+" ha tenido un porcentaje del "+porcentaje+"%");
+
+
+            }else if(porcentaje>=50){
+                console.log("Nivel bajo,"+nombre+" ha tenido un porcentaje del "+porcentaje+"%");
+            }else if(porcentaje>=75){
+                console.log("Nivel medio,"+nombre+" ha tenido un porcentaje del "+porcentaje+"%");
+
+            } else{
+                console.log("Nivel alto,"+nombre+" ha tenido un porcentaje del "+porcentaje+"%");
+
+
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

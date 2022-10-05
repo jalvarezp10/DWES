@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num=parseInt(prompt("Introduce un numero","8"))
+        let num2=parseInt(prompt("Introduce un numero","3"))
+        let result;
+      
+
+        function suma(){
+            result=num+num2;
+            let diferencia=num-num2;
+            alert("la suma es "+ result+" y la diferencia "+diferencia);
+
+
+        }
+        function mult(){
+            result=num*num2;
+            let division=num/num2;
+            alert("el producto es "+result+" y la division es "+division)
+        }
+        if(num>num2){
+            console.log(suma());
+
+            
+            
+
+        }else if(num2>num){
+            console.log(mult());
+            
+        }else{
+            alert("Son iguales");
+        }
+    </script>
+</body>
+</html>

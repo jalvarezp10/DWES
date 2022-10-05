@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Escribe un programa que pida al usuario un día de la semana y que muestre un
+        mensaje con el día siguiente.
+         Si se introduce un valor que no corresponda a un día de la semana, se le
+        mostrará un mensaje al usuario.*/
+        window.onload=semana;
+
+        
+
+        function semana(){
+            let day=prompt("Di un dia de la semana","Lunes");
+            
+            let dias=["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"];
+
+            let contador=0;
+            for (let i = 0; i < dias.length; i++) {
+                if(day==dias[i]){
+                    contador++;
+                    if(i==dias.length-1){
+                        console.log(dias[0]);
+
+                    }else{
+                        console.log(dias[i+1]);
+                    }
+
+
+                }
+                
+            }
+            if (contador==0){
+                console.log("Error en el dia de la semana")
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

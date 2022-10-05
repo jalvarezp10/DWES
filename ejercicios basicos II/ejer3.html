@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="radio" name="" id="op1" value="opcion1" onclick="mensaje()"> <br>
+    <input type="radio" name="" id="op2" value="opcion2" onclick="mensaje()"> <br>
+    <input type="radio" name="" id="op3" value="opcion3" onclick="mensaje()">
+    
+    <script>
+        function mensaje(){
+            let  radio1=document.getElementById("op1");
+            let radio2=document.getElementById("op2");
+            let radio3=document.getElementById("op3");
+            if(radio1.checked && !radio2.checked && !radio3.checked){
+                alert("Opcion 1 es seleccionada");
+            }else if(radio2.checked && !radio1.checked && !radio3.checked){
+                alert("Opcion 2 esta seleccionada");
+
+            }else if(radio3.checked && !radio2.checked && !radio1.checked){
+                alert("Opcion 3 esta seleccionada");
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

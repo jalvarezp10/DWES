@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* Vamos a realizar un script que nos pregunte el nombre y la edad. Nos
+        responderá con un saludo y nos dirá si somos menores o mayores de edad y
+        los días que hemos vivido*/
+        
+        let nombre=prompt("Introduce tu nombre","Eduardo Garcia Caballero")
+        let num=parseInt(prompt("Inrtroduce tu edad","18"));
+        
+        function mayorEdad(){
+            if(num>=18){
+            console.log("Saludos "+nombre+" eres mayor de edad")
+            }else{
+            console.log("Saludos "+nombre+" eres menor de edad")
+            
+            }
+
+        }
+        console.log(mayorEdad());
+        
+
+
+
+    </script>
+    
+</body>
+</html>

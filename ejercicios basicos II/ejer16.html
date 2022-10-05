@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Se ingresan tres valores por teclado, si todos son iguales se imprime la suma
+        del primero con el segundo y a este resultado se lo multiplica por el tercero
+        (tener en cuenta que puede haber tres condiciones simples).*/
+        window.onload=operar;
+
+        function operar(){
+            let num=parseInt(prompt("Introduce un numero"));
+            let num2=parseInt(prompt("Introduce un numero"));
+            let num3=parseInt(prompt("Introduce un numero"));
+
+            if (num==num2 && num==num3){
+                console.log((num+num2)*num3);
+            }else{
+                console.log("No son iguales")
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

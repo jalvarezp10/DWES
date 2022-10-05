@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Se ingresa por teclado un número positivo de uno o dos dígitos controlar si el
+        número introducido es correcto y mostrar un mensaje indicando si el número
+        tiene uno o dos dígitos (recordar de convertir a entero con parseInt para
+        preguntar posteriormente por una variable entera). Tener en cuenta qué
+        condición debe cumplirse para tener dos dígitos un número entero.*/
+
+        let num=parseInt(prompt("Introduce un numero","10"))
+        
+        function numeroCorrecto(){
+            if (num>9){
+                console.log("El numero tiene dos digitos y es positivo");
+
+            }else if(num<9){
+                console.log("El numero tiene un digito y es negativo");
+            
+            }else if(num<0 && num>-9){
+                console.log("El numero tiene un digito y es negativo");
+
+            }else{
+                console.log("El numero tiene dos digitos y es negativo");
+            }
+
+        }
+        console.log(numeroCorrecto());
+    </script>
+    
+</body>
+</html>

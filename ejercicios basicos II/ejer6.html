@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    /*Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de
+    ellos.*/
+
+        let num=parseInt(prompt("Inrtroduce un numero","7"));
+        let num2=parseInt(prompt("Inrtroduce un numero","5")); 
+        let num3=parseInt(prompt("Inrtroduce un numero","8"));
+        function numeroMayor(){
+            
+            if (num>num2 && num>num3){
+               console.log(num);
+            }else if(num2>num3 && num2>num){
+                console.log(num2);
+
+            }else{
+                console.log(num3);
+                
+            } 
+                
+            
+
+        }
+        console.log(numeroMayor())
+
+        
+
+    </script>
+    
+</body>
+</html>
