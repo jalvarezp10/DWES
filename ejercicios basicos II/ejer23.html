@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+        /*Calcular el precio de un producto introduciendo la base imponible (BI) y
+        seleccionando el tipo de iva que se le aplica (normal:21%, reducido:10%) e
+        introduciendo el peso para calcular los gastos de envío (Peso < 1Kg: 3€, Peso<
+        3kg:5€ y Peso>=3Kg 10€).
+        Precio= BI + Cuota IVA (%sobreBI) + Gastos envío.*/
+
+        let bi=parseInt(prompt("Introduce la base imponible"));
+        let iva=(prompt("Introduce el tipo de IVA"));
+        let peso=parseInt(prompt("Introduce el peso del producto"));
+
+        window.onload=precioProducto;
+
+        function precioProducto(){
+            let precio=bi;
+
+            if(iva=="normal"){
+                precio+=bi*21/100;
+            }else{
+                precio+=bi*0.1;
+            }
+
+
+            if (peso>3){
+                precio+=10;
+
+            }else if(peso<3){
+                precio+=5;
+
+            }else if(peso<1){
+                precio=+3;
+
+            }
+            console.log(precio+" euros");
+        }
+
+        
+    </script>
+</body>
+</html>

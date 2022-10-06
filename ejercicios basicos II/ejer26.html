@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Separe los numeros por comas</p>
+        <input type="text" name="" id="texto">
+        <button onclick="calculadora()">Cargar Ejemplo</button>
+        <br>
+        <button onclick="calculadora()">Calcular</button>
+        <button onclick="calculadora()">Reiniciar</button>
+    </div>
+
+    <script>
+        function calculadora(){
+
+            let texto=document.getElementById("texto").values;
+            let nums=texto.split(',');
+            let numMayor=0;
+            let numMenor=5000;
+            let suma;
+            let media;
+            let aux;
+            for (let i = 0; i < nums.length; i++) {
+                aux=parseInt(nums[i]);
+                suma+=aux;
+                if(numMayor<aux){
+                    numMayor=aux;
+
+                }
+                if(numMenor>aux){
+                    numMenor=aux;
+                }
+
+                
+            }
+            media=suma/nums.length;
+
+            console.log(suma);
+            console.log(media);
+            console.log(numMayor);
+            console.log(numMenor);
+
+
+        }
+
+    </script>
+    
+</body>
+</html>
